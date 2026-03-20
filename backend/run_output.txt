@@ -1,0 +1,82 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.fairshare:fairshare-backend >-------------------
+[INFO] Building FairShare Backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ fairshare-backend ---
+[INFO] Deleting C:\Users\rog\Downloads\fair-share-master\backend\target
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ fairshare-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ fairshare-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ fairshare-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 41 source files with javac [debug release 17] to target\classes
+[WARNING] /C:/Users/rog/Downloads/fair-share-master/backend/src/main/java/com/fairshare/entity/User.java:[20,20] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/rog/Downloads/fair-share-master/backend/src/main/java/com/fairshare/entity/User.java:[23,20] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/rog/Downloads/fair-share-master/backend/src/main/java/com/fairshare/entity/User.java:[26,20] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/rog/Downloads/fair-share-master/backend/src/main/java/com/fairshare/entity/User.java:[33,21] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[INFO] /C:/Users/rog/Downloads/fair-share-master/backend/src/main/java/com/fairshare/service/GeminiService.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/rog/Downloads/fair-share-master/backend/src/main/java/com/fairshare/service/GeminiService.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ fairshare-backend ---
+[INFO] skip non existing resourceDirectory C:\Users\rog\Downloads\fair-share-master\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ fairshare-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ fairshare-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ fairshare-backend ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-21T01:22:23.109+05:30  INFO 45544 --- [           main] com.fairshare.FairShareApplication       : Starting FairShareApplication using Java 23.0.2 with PID 45544 (C:\Users\rog\Downloads\fair-share-master\backend\target\classes started by rog in C:\Users\rog\Downloads\fair-share-master\backend)
+2026-03-21T01:22:23.112+05:30  INFO 45544 --- [           main] com.fairshare.FairShareApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-21T01:22:24.151+05:30  INFO 45544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-21T01:22:24.271+05:30  INFO 45544 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 10 JPA repository interfaces.
+2026-03-21T01:22:25.102+05:30  INFO 45544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2026-03-21T01:22:25.124+05:30  INFO 45544 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-21T01:22:25.124+05:30  INFO 45544 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-21T01:22:25.239+05:30  INFO 45544 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-21T01:22:25.241+05:30  INFO 45544 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2043 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-03-21T01:22:25.492+05:30  INFO 45544 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-21T01:22:25.601+05:30  INFO 45544 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-21T01:22:25.666+05:30  INFO 45544 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-21T01:22:26.096+05:30  INFO 45544 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-21T01:22:26.149+05:30  INFO 45544 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-21T01:22:26.494+05:30  INFO 45544 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15994b0b
+2026-03-21T01:22:26.497+05:30  INFO 45544 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-21T01:22:26.567+05:30  WARN 45544 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-21T01:22:28.508+05:30  INFO 45544 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-21T01:22:28.790+05:30  INFO 45544 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-21T01:22:29.286+05:30  INFO 45544 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-21T01:22:30.316+05:30  WARN 45544 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 430f918e-8a18-4fed-a36b-3a48b7f2390c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-21T01:22:30.684+05:30  INFO 45544 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79143853, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@541ea657, org.springframework.security.web.context.SecurityContextHolderFilter@4bdd6fe0, org.springframework.security.web.header.HeaderWriterFilter@3118ed2c, org.springframework.web.filter.CorsFilter@5274acd1, org.springframework.security.web.authentication.logout.LogoutFilter@734d870f, com.fairshare.security.JwtAuthenticationFilter@5cea47a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25f688d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b1434ce, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7308e2d6, org.springframework.security.web.session.SessionManagementFilter@43165282, org.springframework.security.web.access.ExceptionTranslationFilter@a6f34f5, org.springframework.security.web.access.intercept.AuthorizationFilter@14972600]
+2026-03-21T01:22:31.010+05:30  INFO 45544 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http) with context path ''
+2026-03-21T01:22:31.018+05:30  INFO 45544 --- [           main] com.fairshare.FairShareApplication       : Started FairShareApplication in 8.653 seconds (process running for 9.329)
+2026-03-21T01:25:42.793+05:30  INFO 45544 --- [nio-8000-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [g_state={"i_l":0,"i_ll":1773931602109,"i_e":{"enable_itp_optimization":3},"i_b":"lCiEvx+rNlrtR++UwjYF7F+2jjSWAYExIpON2dtfppA"}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-03-21T01:25:42.816+05:30  INFO 45544 --- [nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-21T01:25:42.816+05:30  INFO 45544 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-21T01:25:42.832+05:30  INFO 45544 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
