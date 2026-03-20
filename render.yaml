@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: fairshare-backend
+    env: docker
+    dockerContext: backend
+    dockerfilePath: Dockerfile
+    plan: free
+    region: ohio
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false # Set this in Render Dashboard to your Neon URL
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ALLOWED_ORIGINS
+        fromService:
+          name: fairshare-frontend
+          type: static
+          property: url
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+
+  - type: web # Using web for Docker frontend to allow ARG injection/proxying, but static is cheaper
+    name: fairshare-frontend
+    env: docker
+    dockerContext: frontend
+    dockerfilePath: Dockerfile
+    plan: free
+    region: ohio
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          name: fairshare-backend
+          type: web
+          property: url
+      - key: REACT_APP_GOOGLE_CLIENT_ID
+        sync: false

@@ -9,6 +9,11 @@ import LandingPage from './LandingPage';
 import InvitePage from './InvitePage';
 
 const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID || '';
+const API_URL = process.env.REACT_APP_API_URL || '';
+
+if (API_URL) {
+  axios.defaults.baseURL = API_URL;
+}
 
 // Setup axios interceptor for token refresh
 const setupAxiosInterceptors = (onLogout) => {
