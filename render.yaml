@@ -25,13 +25,13 @@ services:
       - key: GEMINI_MODEL
         value: gemini-2.5-flash
 
-  - type: web # Using web for Docker frontend to allow ARG injection/proxying, but static is cheaper
+  - type: static
     name: fairshare-frontend
-    env: docker
-    dockerContext: frontend
-    dockerfilePath: Dockerfile
+    env: node
     plan: free
     region: ohio
+    buildCommand: "cd frontend && npm install && npm run build"
+    staticPublishDir: "frontend/build"
     envVars:
       - key: REACT_APP_API_URL
         fromService:
@@ -40,3 +40,7 @@ services:
           property: url
       - key: REACT_APP_GOOGLE_CLIENT_ID
         sync: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
