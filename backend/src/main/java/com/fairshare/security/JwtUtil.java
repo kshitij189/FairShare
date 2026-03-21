@@ -20,9 +20,9 @@ public class JwtUtil {
     private final Set<String> blacklistedTokens = ConcurrentHashMap.newKeySet();
 
     public JwtUtil(
-            @Value("${jwt.secret}") String secret,
-            @Value("${jwt.access-token-expiration}") long accessTokenExpiration,
-            @Value("${jwt.refresh-token-expiration}") long refreshTokenExpiration) {
+            @Value("${jwt.secret:b9c4e7a2f6d1c8a93e5b7f0d4a1c6e8b2f9d3a7c5e1b8d0f6a2c4e7b9d1f3a6}") String secret,
+            @Value("${jwt.access-token-expiration:1800000}") long accessTokenExpiration,
+            @Value("${jwt.refresh-token-expiration:604800000}") long refreshTokenExpiration) {
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
         this.accessTokenExpiration = accessTokenExpiration;
         this.refreshTokenExpiration = refreshTokenExpiration;
