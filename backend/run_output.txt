@@ -80,3 +80,5 @@ This generated password is for development use only. Your security configuration
 2026-03-21T01:25:42.816+05:30  INFO 45544 --- [nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-03-21T01:25:42.816+05:30  INFO 45544 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-03-21T01:25:42.832+05:30  INFO 45544 --- [nio-8000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2026-03-21T03:47:04.399+05:30  WARN 45544 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h36s297ms118┬╡s600ns).
+2026-03-21T13:57:22.872+05:30  WARN 45544 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h10m21s768ms648┬╡s500ns).
